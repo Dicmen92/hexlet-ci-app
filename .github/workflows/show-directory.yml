@@ -9,6 +9,11 @@ jobs:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
-      - setup: make setup
-      - test: make test
-      - lint: make lint
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Project setup
+        run:  make setup
+      - name: Running tests
+        run: make test
+      - name: Launching the linter
+        run: make lint
