@@ -8,9 +8,12 @@ jobs:
   build:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
-    steps: # список шагов, которые надо выполнить
-      - name: Checkout repository
+    steps: # список шагов, которые надо выполнить    
+      - name: Checkout repository # клонирование репозитория
         uses: actions/checkout@v2
+      - uses: actions/setup-node@v4 # установка Node
+
+      cache: 'npm' # ускоряет повторные сборки
       - name: Project setup
         run:  make setup
       - name: Running tests
