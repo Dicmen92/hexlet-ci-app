@@ -23,15 +23,14 @@ jobs:
         uses: actions/setup-node@v4 
         with:
           node-version: ${{ matrix.node-version }}
-
-      cache: 'npm' # ускоряет повторные сборки
+          cache: 'npm' # ускоряет повторные сборки      
 
       - name: Project setup
         run:  make setup
 
       - name: Running tests
         run: make test
-        
+
       - name: Launching the linter
         run: make lint
 
