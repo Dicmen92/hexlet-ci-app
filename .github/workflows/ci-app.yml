@@ -35,4 +35,4 @@ jobs:
         run: make lint
 
       - name: Print Hello from Hexlet # экшен Hello from Hexlet action!
-      uses: hexlet-components/hello-from-hexlet-action@release
+        uses: hexlet-components/hello-from-hexlet-action@release
