@@ -35,4 +35,4 @@ This repository is created and maintained by the team and the community of Hexle
 
 See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
 
-[![show-directory](https://github.com/Dicmen92/hexlet-ci-app/actions/workflows/show-directory.yml/badge.svg)](https://github.com/Dicmen92/hexlet-ci-app/actions/workflows/show-directory.yml)
+[![ci-app](https://github.com/Dicmen92/hexlet-ci-app/actions/workflows/ci-app.yml/badge.svg)](https://github.com/Dicmen92/hexlet-ci-app/actions/workflows/ci-app.yml)
